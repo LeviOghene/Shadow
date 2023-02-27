@@ -5,6 +5,11 @@
 --Transparent-white: hsla(0, 0%, 100%, 0.75);
 --Very-light-gray: hsl(0, 0%, 95%);
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: var(--Very-light-gray);
     color: var(--Transparent-white);
@@ -16,7 +21,7 @@ body{
     margin: auto;
     display: flex;
     padding: 100px;
-    width: 1440px;
+    
 
 }
 .sedans{
@@ -74,16 +79,17 @@ p{
   cursor: pointer;
    
 }
-@media  only screen and (max-width:375px) {
+@media  only screen and (max-width:500px) {
     .container{
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-        padding: 100px 20px 100px 20px;
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+
     }
     .sedans{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
+       
     }
     .luxury{
         border-top-right-radius: 0px;
@@ -91,3 +97,5 @@ p{
     }
 
 }
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
